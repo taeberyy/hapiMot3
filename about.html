@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Happy Monthsary! </title>
+        <link rel="icon" type="image/x-icon" href="images/apr.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="navLinks" id="navLLinks">
+                    <i class="bi bi-x-circle-fill" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html" class="active">ABOUT</a></li>
+                        <li><a href="">LETTER</a></li>
+                        <li><a href="">TUNES</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-three-dots-vertical" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="textBox">
+                <h1>You got a letter!</h1>
+            </div>
+        </section>
+
+<!-- BUTTONS -->
+         <section class="buttons">
+            <div class="lt">
+                <a href="letter.html"><img src="images/letter.png" alt=""><h1>Letter</h1></a>
+            </div>
+            <div class ="lt">
+                <a href="tunes.html"><img src="images/tunes.png" alt=""><h1>Tunes</h1></a>
+            </div>
+        </section>
+
+        <!-- JS -->
+    <script>
+        var navLLinks = document.getElementById("navLLinks");
+
+        function showMenu(){
+            navLLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+</html>

@@ -16,13 +16,18 @@
 
 nav {
     display: flex;
-    padding: 1.5% 6%;
+    padding: 10px 100px;
     justify-content: space-between;
     /* align-items: center; */
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 3px 20px 1px #6e0e46;
+    z-index: 999;
 }
 
 nav img {
-    width:78px;
+    width:50px;
 }
 
 .navLinks {
@@ -33,7 +38,7 @@ nav img {
 .navLinks ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 12px 20px;
     position: relative;
 }
 
@@ -81,6 +86,7 @@ nav img {
 
 .textBox h1 {
     font-size: 62px;
+    font-weight: 900;
 }
 
 .textBox p {
@@ -116,6 +122,7 @@ nav .bi {
     }
     .navLinks ul li {
         display: block;
+        margin: 0px 0px 50px 0px;
     }
     .navLinks {
         position: absolute;
@@ -132,40 +139,146 @@ nav .bi {
         display: block;
         color: #ffff;
         margin: 10px;
-        font-size: 22px;
+        font-size: 25px;
         cursor: pointer;
     }
     .navLinks ul {
         padding: 25px;
     }
+     .navLinks ul li a {
+        font-size: 20px;
+    }
 }
 
+/***** BUTTONS *****/
 .buttons img {
     width: 350px;
 }
 .buttons {
-    margin-top: 10%;
+    padding: 80px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
+    background-color:#f3a2bd;
 }
 
 .buttons .lt {
     flex-basis: 20%;
-    background: #c44480;
+    background: #bb2248;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     padding: 20px 30px;
     box-sizing: border-box;
     transition: 0.3s;
 }
 
 .buttons .lt h1 {
-    font-weight: 400;
+    font-weight: 600;
+    color:  #f08ca5;
     margin: 5px 5px;
 }
 
-.buttons .lt:hover {
-    box-shadow: 0 0 20px 0px rgb(141, 15, 36);
+.buttons .lt a {
+     text-decoration: none;
 }
+
+.buttons .lt:hover {
+    box-shadow: 0px 0px 20px 8px #eb778b;
+}
+
+@media(max-width: 700px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+/***** FOOTER *****/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    background-color:#f7bfd5; 
+}
+
+.footer h4 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color:#c44480;
+}
+
+.footer p {
+    color:#c44480;
+}
+
+.icons .bi {
+    color: #9c2356;
+    display: inline;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.lastFooter {
+    color:#e99dbd;
+    margin: 15px;
+    font-size: 12px;
+}
+
+/************************** ABOUT PAGE **************************/
+.subHeader {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#390b26ce, #c75087b6, #d44b9688, #fc79b6cc, #fcbcd7cb), url(images/about.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.slambook h1 {
+    margin-bottom: 50px;
+    color: pink;
+    font-size: 55px;
+}
+
+.slambook {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color:#f3a2bd;
+}
+.slamNiniBox {
+    display: flex; 
+    /* justify-content: center; 
+    align-items: center;  */
+    gap: 150px; 
+    /* width: 100%; 
+    max-width: 1000px; */
+}
+
+.slambook .slamNini {
+    flex: 1;
+    align-content: center;
+    flex-basis: 20%;
+    background: #bb2248;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.slamNini p {
+    margin: 10px 10px;
+    white-space: nowrap;
+    padding: 5px 0px; 
+    color: #ffff;
+    font-size: 35px;
+    line-height: 2;
+}
+
+.slambook img {
+    width:300px;
+}
+

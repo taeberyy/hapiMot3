@@ -372,6 +372,7 @@ nav .bi {
 }
 
 .letter p {
+padding-top: 1rem;
   font-size: 16px;
   line-height: 15px;
   font-weight: normal;

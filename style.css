@@ -152,7 +152,8 @@ nav .bi {
 
 /***** BUTTONS *****/
 .buttons img {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
 }
 .buttons {
     padding: 80px;
@@ -165,10 +166,12 @@ nav .bi {
     background-size: 600%; */
     background-image: linear-gradient(#e976a691), url(images/bgcontent.jpg);
     background-position: center;
+    align-items: stretch;
+    gap: 10px;
 }
 
 .buttons .lt {
-    flex-basis: 20%;
+    flex: 1 1 0;
     /* background: #bb2248; */
     background: transparent;
     border: 2px solid #bb224870;
@@ -256,13 +259,14 @@ nav .bi {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color:#f3a2bd;
+    background-image: linear-gradient(#e976a691), url(images/bgcontent.jpg);
+    background-position: center;
 }
 .slamNiniBox {
     box-sizing: border-box;
     display: flex; 
     justify-content: center; 
-    align-items: flex-start; 
+    align-items: center; 
     gap: 40px; 
     width: 100%; 
     max-width: 1000px; 
@@ -305,7 +309,6 @@ nav .bi {
     width: 100%;
     height: auto;
     max-width: 100%;
-    border-radius: 10px;
     object-fit: contain;
 }
 
